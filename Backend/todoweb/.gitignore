@@ -1,0 +1,39 @@
+# Maven target directory
+target/
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Application config
+application-local.properties
+application-dev.properties
+application-prod.properties
+
+# Generated files
+**/generated-sources/
+**/generated-test-sources/
+
+# Lombok generated files
+*.class
+
+# Compiled class files
+*.class
+
+# Packaged artifacts
+*.jar
+*.war
+*.ear
+
+# Test outputs
+/test-output/
