@@ -12,7 +12,7 @@ const Home = () => {
   const fetchDataDB = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch("http://localhost:8080/todo");
+      const response = await fetch("https://todosweb.up.railway.app/todo");
       if (!response.ok) throw new Error("Failed to fetch todos");
       const data = await response.json();
       setTask(data);
@@ -31,7 +31,7 @@ const Home = () => {
   const addTaskHandler = async () => {
     if (!newTask || newTask.trim() === "") return;
     try {
-      const res = await fetch("http://localhost:8080/todo", {
+      const res = await fetch("https://todosweb.up.railway.app/todo", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -14,7 +14,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(@NonNull CorsRegistry registry) {
                 registry.addMapping("/todo/**")
-                        .allowedOrigins("http://localhost:5173")
+                        .allowedOrigins("https://todos-webb.vercel.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE");
             }
         };
